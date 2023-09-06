@@ -1,0 +1,129 @@
+.certificateSection {
+    position: relative;
+    display: flex;
+    height: 100%;
+}
+
+.bannerImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background: linear-gradient(0deg, rgba(21, 75, 161, 0.50) 0%, rgba(21, 75, 161, 0.50) 100%), lightgray 50% / cover no-repeat;
+}
+
+.bannerContent {
+    margin: 50px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.report {
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.form {
+    border-radius: 30px;
+    border: 4px solid #154BA1;
+    background: rgba(245, 245, 245, 0.95);
+    padding: 20px 30px;
+}
+
+.title {
+    color: #154BA1;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+
+.groupName {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.groupName svg {
+    min-width: 24px;
+    max-height: 24px;
+}
+
+.groupName span {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #154BA1;
+}
+
+.holderGroup {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    justify-items: center;
+}
+
+.btn {
+    color: #FFF;
+    font-weight: 700;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 20px;
+    margin-top: 30px;
+    background: #FFC822;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 880px) {
+    .holderGroup {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        line-height: 32px;
+    }
+
+    .form {
+        padding: 20px 15px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .groupName span {
+        font-size: 18px;
+    }
+
+    .form label {
+        font-size: 15px;
+    }
+
+    .holderGroup {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .report {
+        color: #154BA1;
+    }
+
+    .bannerImage {
+        display: none;
+    }
+}

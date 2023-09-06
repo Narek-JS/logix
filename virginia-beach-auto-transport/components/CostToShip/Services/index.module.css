@@ -1,0 +1,115 @@
+.carMovingServicesSection {
+    padding: 30px 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lineNode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.lineNodeRevers {
+    flex-direction: row-reverse;
+}
+
+.contentNode {
+    flex: 70;
+    padding: 15px;
+    background: #F4F7FB;
+    border: 2px solid #BB2233;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow-y: auto;
+}
+
+.contentNode::-webkit-scrollbar {
+    width: 3px;
+}
+  
+.contentNode::-webkit-scrollbar-track {
+    background-color: #FFFFFF;
+}
+  
+.contentNode::-webkit-scrollbar-thumb {
+    background-color: #BB2233;
+    border-radius: 10px;
+}
+
+.subTitle {
+    color: #BB2233;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 11px;
+}
+
+.row {
+    height: 25px;
+    width: 4px;
+    background-color: rgba(0, 59, 86, 0.6);
+    border-radius: 15px;
+}
+
+.title {
+    color: #003B56;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.text {
+    color: #003B56;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.link {
+    border: 1px solid #BB2233;
+    border-radius: 5px;
+    padding: 8px 34px;
+    color: #BB2233;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.imagesNode { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 991px) {
+    .lineNode,
+    .lineNodeRevers {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .imagesNode {
+        flex-direction: column;
+    }
+}

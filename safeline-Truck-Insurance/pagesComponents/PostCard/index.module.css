@@ -1,0 +1,125 @@
+.postCard {
+    max-width: 297px;
+    width: 100%;
+}
+
+.shadowCard {
+    border-radius: 30px;
+    border: 1px solid #32ADDC;
+    background: #F4F7FB;
+    box-shadow: 5px 5px 5px 0px rgba(7, 39, 101, 0.15);
+}
+
+.image {
+    border-radius: 30px;
+    width: 100%;
+    max-height: 190px;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.shadowCard .image {
+    border-radius: 30px 30px 0 0;
+}
+
+.dateNode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.date span {
+    color: #012F59;
+    font-size: 14px;
+}
+
+.title {
+    font-size: 20px;
+    color: #012F59;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 15px;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 50px;
+}
+
+.description {
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 95px;
+    color:#012F59;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.link {
+    border-radius: 50px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #29AAE2;
+    width: 100%;
+    cursor: pointer;
+}
+
+.shadowCard .link {
+    justify-content: start;
+    background-color: initial;
+}
+
+.shadowCard .link span {
+    color: #29AAE2;
+}
+
+.wrapperIcon {
+    background: rgba(255, 255, 255, 0.40);
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s;
+}
+
+.link span {
+    color: #FFF;
+    font-weight: 500;
+    transition: all .2s;
+}
+
+
+.shadowCard .dateNode,
+.shadowCard .title,
+.shadowCard .description,
+.shadowCard .link {
+    padding: 0 20px;
+}
+
+.shadowCard .link {
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .postCard[style="width: 31%; max-width: 390px;"] {
+        width: 100% !important;
+    }
+
+    .postCard {
+        max-width: 390px;
+    }
+}

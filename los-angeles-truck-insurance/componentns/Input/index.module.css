@@ -1,0 +1,57 @@
+.inputGroup {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputGroupTransparent {
+    border-bottom: 1px solid rgba(21, 75, 161, 0.60);
+    justify-content: flex-end;
+    max-width: 450px;
+    width: 100%;
+}
+
+.inputGroup label {
+    font-weight: 500;
+    color: #154BA1;
+}
+
+.inputGroup input {
+    height: 38px;
+    padding: 7px 10px;
+    background: #FFF;
+    border-radius: 10px;
+    color: #154BA1;
+    font-size: 14px;
+}
+
+.inputGroupTransparent input {
+    padding: 7px 10px 17px 0;
+    width: 100%;
+}
+
+.inputGroup input::placeholder {
+    color: rgba(21, 75, 161, 0.60);
+}
+
+.error {
+    font-size: 12px;
+    color: red;
+    position: absolute;
+    bottom: -16px;
+    left: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .inputGroupTransparent {
+        max-width: initial;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .inputGroup label {
+        font-size: 16px;
+    }
+}

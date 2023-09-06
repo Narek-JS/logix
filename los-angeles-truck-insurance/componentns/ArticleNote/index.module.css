@@ -1,0 +1,56 @@
+.articleNote {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 200, 34, 0.15);
+    background: #F5F5F5;
+    transition: all .1s;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.articleNote:hover {
+    box-shadow: 4px 4px 4px 0px rgba(21, 75, 161, 0.20);
+    background: #FFF;
+    outline: 2px solid #FFC822;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.title span {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.articleNote .title span {
+    color: #FFC822;
+}
+
+.articleNote span {
+    color: #FFC822;
+}
+
+.border {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 200, 34, 0.15);
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.articleNote p {
+    color: #154BA1;
+    line-height: 22px;
+}
+
+@media screen and (max-width: 768px) {
+    .articleNote {
+        min-width: 280px !important;
+    }
+}

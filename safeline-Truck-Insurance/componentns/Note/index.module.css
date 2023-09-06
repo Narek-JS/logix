@@ -1,0 +1,66 @@
+.note {
+    border-radius: 20px;
+    border: 1px solid #32ADDC;
+    background: #F4F7FB;
+
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.noteChildrens {
+    border-radius: 15px;
+    border: 1px solid rgba(1, 16, 107, 0.15);
+    background: #FFF;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.textNode {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.textNode svg {
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.textNode p {
+    color: #001D4A;
+    line-height: 28px;
+    text-align: center;
+    padding-right: 15px;
+}
+
+.noteLogo {
+    position: relative;
+    margin-right: 20px;
+    height: 34px;
+}
+
+.noteLogo img {
+    max-width: 224px;
+    height: 34px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.noteLogo::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -20px;
+    height: 100%;
+    width: 2px;
+    background: #32ADDC;
+}

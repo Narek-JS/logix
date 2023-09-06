@@ -1,0 +1,139 @@
+.section {
+    padding: 30px 0;
+}
+
+.aboutCompany {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.block {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    height: 304px;
+}
+
+.reversBlock {
+    flex-direction: row-reverse;
+}
+
+.contentNode {
+    flex: 70;
+    padding: 15px;
+    background: #F4F7FB;
+    border: 2px solid #BB2233;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow-y: auto;
+}
+
+.contentNode::-webkit-scrollbar {
+    width: 3px;
+}
+  
+.contentNode::-webkit-scrollbar-track {
+    background-color: #FFFFFF;
+}
+  
+.contentNode::-webkit-scrollbar-thumb {
+    background-color: #BB2233;
+    border-radius: 10px;
+}
+
+.subTitle {
+    color: #BB2233;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 11px;
+}
+
+.row {
+    height: 25px;
+    width: 4px;
+    background-color: rgba(0, 59, 86, 0.6);
+    border-radius: 15px;
+}
+
+.title {
+    color: #003B56;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.text {
+    color: #003B56;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.link {
+    border: 1px solid #BB2233;
+    border-radius: 5px;
+    padding: 8px 34px;
+    color: #BB2233;
+    font-weight: 700;
+}
+
+.imageNode {
+    flex: 30;
+    background: #FDFDFF;
+    border: 2px solid #BB2233;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.image {
+    max-width: 390px;
+    max-height: 284px;
+    height: -webkit-fill-available;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .contentNode,
+    .imageNode {
+        flex: initial;
+        overflow-y: initial;
+    }
+
+    
+    
+    .block {
+        height: initial;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imageNode {
+        width: fit-content;
+    }
+
+    .image {
+        max-width: 390px;
+        max-height: initial;
+    }
+}

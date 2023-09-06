@@ -1,0 +1,93 @@
+.bannerPost {
+    margin: 40px 0;
+}
+
+.title {
+    color: #00297A;
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: 50px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.image {
+    flex: 70;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.postData {
+    flex: 30;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.firstLine {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.latestText {
+    color: #BB2233;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.date {
+    color: #00297A;
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.subTitle {
+    color: #00297A;
+    text-decoration-line: underline;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.description {
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    height: 390px;
+    overflow: hidden;
+
+    color: #00297A;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #BB2233;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 991px) {
+    .image {
+        flex: 50;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    .title {
+        margin-bottom: 25px;
+    }
+}

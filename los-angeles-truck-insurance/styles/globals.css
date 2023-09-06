@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a, li, button, input {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --tooltip-margin: 15px;
+  --tooltip-arrow-size: 6px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+textarea:focus,
+input:focus {
+  outline: 2px solid transparent;
+}
+
+section, nav, header, footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: clip;
+}
+
+body:has(.sideBar),
+body:has(.fullScreen),
+body:has(.feedbackForm),
+body:has(.popup) {
+  overflow: hidden;
+}
+
+body:has(.feedbackForm) .socialLinks {
+    display: none;
+}
+
+#protal:has(.popup) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 29, 74, 0.30) 0%,
+    rgba(0, 30, 74, 0.30) 100%
+  ), rgba(211, 211, 211, 0.30) 50% / cover no-repeat;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.layoutPortal {
+  background: #154BA1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+}
+
+.oppositeCategoryPosts .postCard * {
+  z-index: 0;
+}
+
+body:has(.layoutPortal) main {
+  display: none;
+}
+
+body:has(.siteBar) footer {
+  display: none;
+}
+
+.layoutPortal:has(.siteBar) {
+  height: 100vh;
+}
+
+body:has(.banner) .banner {
+  padding-top: 130px;
+}
+
+body:not(body:has(.banner)) main {
+  padding-top: 130px;
+} 

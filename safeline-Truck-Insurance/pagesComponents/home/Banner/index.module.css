@@ -1,0 +1,227 @@
+.banner {
+    position: relative;
+    display: flex;
+    height: 100%;
+}
+
+.bannerImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.umbrellaWrapper {
+    display: flex;
+    max-width: max-content;
+    align-items: center;
+}
+
+.description {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 540px;
+}
+
+.wrapperTitle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.title {
+    color: #32ADDC;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.title span {
+    color: #FFFFFF;
+}
+
+.subTitle {
+    font-size: 55px;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 60px;
+}
+
+.subTitle span {
+    background-color: #32ADDC;
+}
+
+.text {
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 22px;
+}
+
+.link {
+    max-width: 430px;
+    border-radius: 20px;
+    background: #32ADDC;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #FFF;
+    text-align: center;
+}
+
+.bannerContent {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 25px 0;
+}
+
+.formWrapper {
+    position: relative;
+    border: 4px solid #2B94C8;
+    border-radius: 30px;
+    height: fit-content;
+}
+
+.umbrellaImageAbsalute {
+    display: none;
+}
+
+@keyframes mount {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-370px);
+    }
+}
+
+@keyframes mountMedia {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-280px);
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+    .umbrellaWrapper {
+        animation: mountMedia .1s forwards;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .description {
+        right: -330px;
+        top: 0px;
+        gap: 5px;
+        max-width: 480px;
+    }
+    
+    .title {
+        font-size: 20px;
+    }
+    
+    .subTitle {
+        font-size: 28px;
+        line-height: 31px;
+    }
+    
+    .text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .bannerContent {
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+        position: relative;
+    }
+
+    .formWrapper {
+        width: fit-content;
+        z-index: 1;
+    }
+
+    .description {
+        position: initial;
+    }
+
+    .umbrellaImage {
+        display: none;
+    }
+
+    .umbrellaWrapper {
+        max-width: 100%;
+        transform: translateX(0px);
+    }
+
+    .description {
+        align-items: center;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .umbrellaImageAbsalute {
+        display: block;
+        position: absolute;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-60%);
+    }
+    .subTitle {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bannerImage {
+        display: none;
+    }
+
+    .formWrapper {
+        background: #012F59;
+        padding: 20px;
+    }
+
+    .text,
+    .title span {
+        color: #012F59;
+    }
+
+    .text {
+        text-align: start;
+    }
+
+    .link {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .formWrapper {
+        width: 100%;
+    }
+
+    .title,
+    .subTitle {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .subTitle {
+        text-align: start !important;
+    }
+}

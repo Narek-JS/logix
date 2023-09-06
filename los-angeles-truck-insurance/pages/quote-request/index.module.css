@@ -1,0 +1,32 @@
+.iframeWrapper {
+    width: 100%;
+}
+
+
+.form {
+    margin: 60px 0;
+}
+
+.noteParagraph {
+    text-align: center;
+    color: #001D4A;
+}
+
+.noteParagraph a {
+    color: #FFC822;
+}
+
+.noteBtn {
+    background-color: #FFC822;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 700;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    height: 38px;
+    cursor: pointer;
+}

@@ -1,0 +1,19 @@
+.sectionTitle {
+    font-size: 32px;
+    font-weight: 700;
+    -webkit-text-stroke: 1.5px #012F59;
+    font-family: sans-serif;
+    color: #FFFFFF;
+}
+
+.sectionTitle span {
+    color: #32ADDC;
+}
+
+.center {
+    text-align: center;
+}
+
+.start {
+    text-align: start;
+}

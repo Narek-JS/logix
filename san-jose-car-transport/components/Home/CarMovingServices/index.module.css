@@ -1,0 +1,46 @@
+.carMovingsSection {
+    padding-bottom: 20px;
+    margin: 30px 0;
+}
+
+.row {
+    width: 100px;
+    height: 5px;
+    background: #001D4A;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.subTitle {
+    max-width: 650px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #F83600 0%, #FE8C00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.description {
+    background: #F5F5F5;
+    padding: 20px;
+    color: #001D4A;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 991px) {
+    .services {
+        flex-wrap: wrap;
+    }
+}

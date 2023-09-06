@@ -1,0 +1,94 @@
+.thankYouSection {
+    padding: 50px 0;
+}
+
+.title {
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 110px;
+    color: #2B94C8;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.note {
+    margin: 0 auto 20px auto;
+}
+
+.blue {
+    text-decoration-line: underline;
+    color: #2B94C8;
+}
+
+.subTitle {
+    color:  #2B94C8;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 44px;
+    margin-bottom: 20px;
+}
+
+.subTitle span {
+    color: #001D4A;
+}
+
+.videoNode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.image {
+    max-width: 468px;
+    width: 100%;
+    max-height: 458px;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.postGroups {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.postGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.posts {
+    display: flex;
+    gap: 20px;
+}
+
+.postGroupTitle {
+    font-size: 24px;
+    color: #001D4A;
+}
+
+@media screen and (max-width: 1266px) {
+    .postGroupsReverse {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .videoNode {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .postGroups { display: none; }
+    .title { font-size: 64px; line-height: 60px;}
+}
+
+@media screen and (max-width: 400px) {
+    .title { font-size: 40px; line-height: 50px;}
+    .subTitle { font-size: 22px; }
+}

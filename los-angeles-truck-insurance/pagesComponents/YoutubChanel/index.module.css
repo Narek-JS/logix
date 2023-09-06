@@ -1,0 +1,118 @@
+.youtubChanel {
+    padding: 50px 0;
+}
+
+.parentBlock {
+    display: flex;
+    gap: 30px;
+}
+
+.videoNode,
+.feedbackNode {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.videoNode {
+    flex: 60%;
+}
+
+.feedbackNode {
+    flex: 40%;
+}
+
+.title {
+    color:#FFC822;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.title span {
+    color: #154BA1;
+}
+
+.contentTitle {
+    font-size: 36px;
+    -webkit-text-stroke: 1.5px #FFC822;
+    font-family: sans-serif;
+    color: #FFFFFF;
+    transform: translateY(-5px);
+}
+
+.feedbacks {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.feedbackNode {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.noteBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feedbackImg {
+    max-width: 168px;
+    width: 100%;
+    max-height: 55px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.groupStar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.link {
+    border-radius: 10px;
+    border: 2px solid #154BA1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 500;
+    color: #154BA1;
+    padding: 5px 0;
+}
+
+.link span,
+.link i {
+    transition: all .3s;
+}
+
+.link:hover span {
+    transform: translateX(-35px) scale(1.1);
+}
+
+.link:hover i {
+    transform: translateX(195px) scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .videoNode { display: none; }
+    .withMobile {
+        display: flex;
+    }
+
+    .parentBlock:has(.withMobile) {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .contentTitle {
+        font-size: 25px;
+    }
+}

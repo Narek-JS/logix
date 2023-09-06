@@ -1,0 +1,134 @@
+.banner {
+    position: relative;
+    display: flex;
+    height: 100%;
+}
+
+.bannerImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.bannerContent {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 0;
+}
+
+.subtitle {
+    font-size: 24px;
+    color: #FFF;
+    text-align: center;
+    font-weight: 500;
+}
+
+.form {
+    width: 100%;
+    border-radius: 30px;
+    border: 4px solid #32ADDC;
+    background: rgba(1, 47, 89, 0.70);
+    padding: 20px 30px;
+}
+
+.title {
+    color: #29AAE2;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 40px;
+    width: fit-content;
+    margin: 0 auto;
+    border-bottom: 2px solid rgba(50, 173, 220, 0.40);
+}
+
+.title span {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.groupName {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.groupName svg {
+    min-width: 24px;
+    max-height: 24px;
+}
+
+.groupName span {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.holderGroup {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    justify-items: center;
+}
+
+.btn {
+    color: #FFF;
+    font-weight: 700;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 20px;
+    margin-top: 30px;
+    background: #29AAE2;
+    cursor: pointer;
+    letter-spacing: 1.3px;
+}
+
+@media screen and (max-width: 880px) {
+    .holderGroup {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        line-height: 32px;
+    }
+
+    .form {
+        padding: 20px 15px;
+    }
+
+    .title span,
+    .title {
+        font-size: 20px;
+    }
+
+    .groupName span {
+        font-size: 18px;
+    }
+
+    .form label {
+        font-size: 15px;
+    }
+
+    .holderGroup {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+}

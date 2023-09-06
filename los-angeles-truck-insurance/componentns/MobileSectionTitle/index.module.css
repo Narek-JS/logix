@@ -1,0 +1,43 @@
+.wrapperTitle {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 0 20px 0;
+}
+
+.center {
+    align-items: center;
+}
+
+.title {
+    font-size: 32px;
+    line-height: 32px; 
+    font-weight: 700;
+    color: #001D4A;
+}
+
+.center .title {
+    text-align: center;
+}
+
+.linkWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.linkWrapper a {
+    font-weight: 700;
+    color: #FFC822;
+}
+
+.linkWrapper span {
+    color: #001D4A;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapperTitle {
+        display: flex;
+    }
+}

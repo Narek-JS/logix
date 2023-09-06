@@ -1,0 +1,43 @@
+.wrapperMightAlso {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contentBlocksTitle {
+    margin-bottom: 30px;
+    color: #154BA1;
+    font-weight: 500;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contentBlocksTitle span {
+    color: #FFC822;
+}
+
+.contentBlocks {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.contentBlocks div p {
+    max-height: 100px;
+}
+
+@media screen and (max-width: 920px) {
+    .contentBlocks .post-card {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .posts {
+        display: none;
+    }
+}

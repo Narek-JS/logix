@@ -1,0 +1,76 @@
+.card {
+    border-radius: 15px;
+    height: fit-content;
+    max-width: 350px;
+}
+
+.image {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.content {
+    padding: 10px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.firstList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.categoryName {
+    color: #BB2233;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.title {
+    color: #00297A;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.date {
+   display: flex;
+   align-items: center;
+   gap: 10px; 
+}
+
+.date span {
+    color: rgba(0, 59, 86, 0.6);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.description {
+    color: #00297A;
+    font-weight: 400;
+    font-size: 18px;
+
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-height: 300px;
+}
+
+.readMore {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #BB2233;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.viewAll {
+    color: rgba(0, 59, 86, 0.6);
+    font-weight: 500;
+    font-size: 20px;
+}

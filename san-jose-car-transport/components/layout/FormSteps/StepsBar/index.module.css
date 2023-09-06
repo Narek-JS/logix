@@ -1,0 +1,95 @@
+.stepsBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.step {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px 30px;
+    position: relative;
+    width: 100%;
+}
+
+.step::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 15% 50%);
+    background: #FFFFFF;
+    width: 51%;
+    height: 100%;
+}
+
+.step::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+    clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+    background: #FFFFFF;
+    width: 51%;
+    height: 100%;
+}
+
+.firstStep::before {
+    clip-path: polygon(0 0, 80% 0, 100% 50%, 80% 100%, 0 100%);
+}
+
+.activeStep::before,
+.activeStep::after {
+    background: linear-gradient(180deg, #F83600 0%, #FE8C00 100%);
+}
+
+.lastStep::before,
+.firstStep::after {
+    clip-path: initial;
+}
+
+.step span {
+    background: linear-gradient(180deg, #F83600 0%, #FE8C00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.activeStep span {
+    background: linear-gradient(180deg, #F83600 0%, #FE8C00 100%);
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: initial;
+    background-clip: initial;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 991px) {
+    .step {
+        padding: 5px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .step::before,
+    .step::after {
+        background-color: #001D4A;
+    }
+
+    .activeStep::before,
+    .activeStep::after {
+        background: linear-gradient(180deg, #F83600 0%, #FE8C00 100%);
+    }
+
+    .step span {
+        color: #FFFFFF;
+    }
+    
+}

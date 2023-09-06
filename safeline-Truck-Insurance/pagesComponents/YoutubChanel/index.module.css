@@ -1,0 +1,105 @@
+.youtubChanel {
+    padding: 50px 0;
+}
+
+.parentBlock {
+    display: flex;
+    gap: 30px;
+}
+
+.videoNode,
+.feedbackNode {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.videoNode {
+    flex: 60%;
+}
+
+.feedbackNode {
+    flex: 40%;
+}
+
+.title {
+    color:#2B94C8;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.contentTitle {
+    font-size: 36px;
+    -webkit-text-stroke: 1.5px #32ADDC;
+    font-family: sans-serif;
+    color: #FFFFFF;
+    transform: translateY(-5px);
+}
+
+.title span {
+    color: #001D4A;
+}
+
+.feedbacks {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.feedbackNode {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.noteBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feedbackImg {
+    max-width: 168px;
+    width: 100%;
+    max-height: 55px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.groupStar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.link {
+    border-radius: 10px;
+    background: #32ADDC;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 500;
+    color: #FFF;
+    padding: 5px 0;
+}
+
+.link span,
+.link i {
+    transition: all .3s;
+}
+
+.link:hover span {
+    transform: translateX(35px) scale(1.1);
+}
+
+.link:hover i {
+    transform: translateX(-175px) scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .youtubChanel { display: none; }
+}

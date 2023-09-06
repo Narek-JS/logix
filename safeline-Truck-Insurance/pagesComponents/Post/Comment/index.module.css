@@ -1,0 +1,219 @@
+.postComment {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.postCommentTitle {
+    color: #32ADDC;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.postCommentTitle span {
+    color: #012F59;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.wrapperSubmit {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.comment {
+    padding: 10px 20px 20px 0;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid rgba(1, 47, 89, 0.40);
+    min-height: 150px;
+    resize: none;
+    width: 100%;
+    padding: 20px;
+}
+
+.comment::placeholder {
+    font-weight: 500;
+    color: rgba(1, 47, 89, 0.40);
+}
+
+.comment:focus {
+    outline: 2px solid transparent;
+}
+
+.submitStap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.wrapperCheckbox {
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.checkNode {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wrapperCheckbox .error {
+    bottom: -28px;
+}
+
+.checkbox {
+    position: relative;
+    display: inline-block;
+    min-width: 20px;
+    min-height: 20px;
+}
+  
+.checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border-radius: 999px;
+    cursor: pointer;
+    position: relative;
+}
+  
+.checkbox input[type="checkbox"]:checked ~ .checkmark:after,
+.checkmark::before,
+.checkmark::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid transparent;
+    background: #29AAE2 border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+
+    color: #29AAE2;
+}
+
+.checkbox input[type="checkbox"]:checked ~ .checkmark:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 7px;
+    width: 8px;
+    height: 13px;
+    border: solid #29AAE2;
+    background-color: transparent;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.emailSaveText {
+    color: #012F59;
+    line-height: 1.3;
+    cursor: pointer;
+    transform: translateY(3px);
+}
+
+.defaultText {
+    color: rgba(0, 59, 86, 0.6);
+    font-weight: 500; 
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.inputList {
+    position: relative;
+    width: 100%;
+}
+
+.inputList input {
+    width: 100%;
+    border-bottom: 1px solid rgba(1, 47, 89, 0.40);
+    padding-bottom: 10px;
+}
+
+.inputList input::placeholder {
+    color: rgba(1, 47, 89, 0.40);
+    font-weight: 500;
+}
+
+.inputList input:focus {
+    outline: 2px solid transparent;
+}
+
+.btn {
+    width: 100%;
+    max-width: 320px;
+    min-width: 250px;
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #FFFFFF;
+    background-color: #29AAE2;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.error {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    color: red;
+    font-size: 13px; 
+}
+
+@media screen and (max-width: 991px) {
+    .btn {
+        width: initial;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .postComment {
+        max-width: initial;
+    }
+
+    .inputs {
+        flex-direction: column;
+    }
+
+    .submitStap {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .btn {
+        max-width: 100%;
+        width: 100%;
+    }
+}

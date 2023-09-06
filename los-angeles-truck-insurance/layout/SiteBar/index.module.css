@@ -1,0 +1,64 @@
+.siteBar {
+    width: 100%;
+}
+
+.siteBar .searchSiteBar {
+    display: flex !important;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #FFC822;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 15px 0;
+    border-bottom: 1px dashed rgba(43, 148, 200, 0.40);
+    color: #FFF;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.dropDownTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    color: #FFF;
+    font-weight: 700;
+    line-height: 24px;
+    gap: 5px;
+    border-bottom: 1px dashed rgba(43, 148, 200, 0.40);
+    cursor: pointer;
+}
+
+.dropDown {
+    padding-left: 20px;
+    display: none;
+}
+
+.dropDown .link {
+    position: relative;
+}
+
+.dropDown .link::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background-color: #FFFFFF;
+    border-radius: 999px;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+}
+
+.activeDropDown {
+    display: block;
+    animation: comeFromOpacite .2s forwards;
+}
+
+@keyframes comeFromOpacite {
+    0% { opacity: 0; transform: translateX(-768px); }    
+    100% { opacity: 1; transform: translateX(0px); }    
+}

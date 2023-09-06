@@ -1,0 +1,44 @@
+.imageNode {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title {
+    color: #001D4A;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.title span {
+    background: linear-gradient(180deg, #F83600 0%, #FE8C00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.image {
+    max-width: 235px;
+    max-height: 335px;
+    object-fit: contain;
+}
+
+.link {
+    color: rgba(0, 59, 86, 0.6);
+    font-weight: 500;
+}
+
+.link span {
+    background: linear-gradient(180deg, #F83600 0%, #FE8C00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .image {
+        max-height: 370px;
+        max-width: initial;
+    }
+}

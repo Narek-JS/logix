@@ -1,0 +1,86 @@
+.aboutUs {
+    
+}
+
+.insuranceServiceNode:first-child {
+    margin-bottom: 20px;
+}
+
+.insuranceServiceNode {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.insuranceServiceImage {
+    max-width: 436px;
+    max-height: 262px;
+    width: 35%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: all .1s;
+}
+
+.insuranceServiceImage:hover {
+    box-shadow: 4px 4px 4px 0px rgba(21, 75, 161, 0.20);
+    background: #FFF;
+    outline: 2px solid #FFC822;
+}
+
+
+/* POSTS */
+.wrapperMightAlso {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contentBlocksTitle {
+    margin-bottom: 30px;
+    color: #154BA1;
+    font-weight: 500;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contentBlocksTitle span {
+    color: #FFC822;
+}
+
+.contentBlocks {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.contentBlocks div p {
+    max-height: 100px;
+}
+
+@media screen and (max-width: 920px) {
+    .contentBlocks .post-card {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .posts {
+        display: none;
+    }
+
+    .insuranceServiceNode {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .insuranceServiceImage {
+        width: 100%;
+    }
+}

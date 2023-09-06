@@ -1,0 +1,96 @@
+.insuranceCard {
+    border-radius: 30px;
+    border: 1px solid rgba(255, 200, 34, 0.15);
+    background: #FFF;
+    max-width: 392px;
+    height: 225px;
+    padding: 30px 20px;
+    display: flex;
+    gap: 5px;
+}
+
+.imageWrapper {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow-y: hidden;
+    transition: all .2s;
+}
+
+.row {
+    max-width: 3px;
+    height: 100%;
+    border: 3px dashed #FFC822;
+    position: absolute;
+    top: -225px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .2s;
+}
+
+.image {
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translate(-50%, -50%);
+    max-width: 100px;
+    width: 100%;
+    transition: all .2s;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: hidden;
+    transition: all .2s;
+}
+
+.title {
+    font-size: 20px;
+    color: #154BA1;
+    font-weight: 600;
+}
+
+.description {
+    color: #154BA1;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.link {
+    position: absolute;
+    left: 0;
+    bottom: -225px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all .2s;
+}
+
+.link span {
+    font-weight: 600;
+    color: #FFC822;
+}
+
+.insuranceCard:hover .row {
+    top: 0;
+}
+
+.insuranceCard:hover .image {
+    top: 50%;
+    z-index: 1;
+}
+
+.insuranceCard:hover .link {
+    bottom: 0px;
+}
+
+.insuranceCard:hover .content {
+    gap: 10px;
+}

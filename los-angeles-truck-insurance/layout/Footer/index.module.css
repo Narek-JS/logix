@@ -1,0 +1,155 @@
+.footer {
+    background: #F5F5F5;
+    padding: 50px 0 42px 0;
+}
+
+.footerContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    padding-bottom: 50px;
+    border-bottom: 1px dashed #154BA1;
+}
+
+.linksGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    min-height: 30px;
+    color: #FFC822;
+    font-size: 24px;
+    font-weight: 500;
+    white-space: nowrap;
+    transform: translateX(-17px);
+}
+
+.link {
+    color: rgba(21, 75, 161, 0.80);
+    font-size: 14px;
+    position: relative;
+    transform: translateX(15px);
+    line-height: 24px;
+    transition: all .2s;
+}
+
+.link:hover {
+    color: #FFC822;
+    text-decoration: underline;
+}
+
+.link:hover::before {
+    background-color: #FFC822;
+}
+
+.link::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 55%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 999px;
+    background-color: rgba(21, 75, 161, 0.80);
+}
+
+.logo {
+    max-width: 350px;
+    width: 100%;
+    max-height: 80px;
+    height: 100%;
+}
+
+.contact {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    line-height: 24px;
+}
+
+.contact i {
+    color: rgba(21, 75, 161, 0.80);
+}
+
+.contact span {
+    color: #FFC822;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration-line: underline;
+}
+
+.contactGroup .title {
+    transform: translateX(0px);
+}
+
+.termsNode {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0 0 0;
+}
+
+.termsNode span {
+    font-size: 14px;
+    color: #154BA1;
+}
+
+.termsNode div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.termsNode a {
+    color: #FFC822;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration-line: underline;
+}
+
+.termsNode div span {
+    color: rgba(255, 255, 255, 0.40);
+}
+
+@media screen and (max-width: 768px) {
+    .termsNode {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .contact i,
+    .contactGroup .title,
+    .linksGroup {
+        display: none;
+    }
+
+    .contactGroup {
+        display: flex;
+        align-items: center;
+    }
+
+    .footerContent {
+        padding-bottom: 30px;
+        justify-content: center;
+    }
+
+    .termsNode span {
+        text-align: center;
+        line-height: 22px;
+    }
+
+    .contact span {
+        text-align: center;
+    }
+}

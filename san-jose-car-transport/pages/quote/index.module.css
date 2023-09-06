@@ -1,0 +1,68 @@
+.qouteContentSection {
+    padding: 40px 0;
+}
+
+.listNode {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.reversListNode {
+    flex-direction: row-reverse;
+}
+
+.textNode {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 604px;
+    width: 100%;
+}
+
+.textNode h2 {
+    font-weight: 700;
+    font-size: 30px;
+    background: linear-gradient(180deg, #F83600 0%, #FE8C00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.block {
+    padding: 20px;
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.block p {
+    color: #001D4A;
+    line-height: 24px;
+}
+
+.block p a {
+    background: linear-gradient(180deg, #F83600 0%, #FE8C00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: underline;
+}
+
+.block a {
+    background: linear-gradient(180deg, #F83600 0%, #FE8C00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 500;
+}
+
+.imageNode {
+    max-width: 560px;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+}

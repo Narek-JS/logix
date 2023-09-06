@@ -1,0 +1,250 @@
+.posts {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.banner {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.bannerImage {
+    max-width: 973px;
+    width: 100%;
+    max-height: 368px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.bannerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 507px;
+}
+
+.contentNode {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.dateNode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dateNode h3 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #FFC822;
+}
+
+.dateNode p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #154BA1;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.bannerTitle {
+    color: #154BA1;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.bannerDescription {
+    line-height: 24px;
+    font-size: 20px;
+    color: #154BA1;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 145px;
+}
+
+/* .bannerLink {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #FFC822;
+    font-weight: 500;
+} */
+
+.bannerLink {
+    border-radius: 10px;
+    background: #FFC822;
+    padding: 5px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.bannerLink span {
+    color: #FFFFFF;
+    transition: all .2s;
+}
+
+.bannerLink .wrapperIcon {
+    background: rgba(255, 255, 255, 0.40);
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s;
+}
+
+.bannerLink:hover span {
+    transform: translateX(-45px);
+}
+
+.bannerLink:hover .wrapperIcon {
+    transform: translateX(150px);
+}
+
+
+.postsSlice {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    justify-items: center;
+}
+
+.oppositeCategoryPosts {
+    background: #F4F7FB;
+    padding: 50px 0;
+}
+
+.oppositeCategoryTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.oppositeCategoryTitle p {
+    font-size: 48px;
+    color: #FFC822;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.562px;
+}
+
+.oppositeCategoryTitle p span {
+    color: #154BA1;
+}
+
+.oppositeCategoryTitle a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #FFC822;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.oppositePosts {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+}
+
+
+.paginationBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.btn {
+    color: #154BA1;
+    font-weight: 700;
+    font-size: 16px; 
+    border-radius: 10px;
+    text-align: center;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: all .3s;    
+
+}
+
+.btn:hover {
+    background: rgba(0, 59, 86, 0.068);
+    transform: translateY(-5px);
+} 
+.btn:active {
+    transform: translateY(1px);
+}
+
+.btn-active {
+    color: #154BA1;
+    font-weight: 700;
+    font-size: 16px; 
+    border-radius: 10px;
+    text-align: center;
+    padding: 7px 15px;
+    background: rgba(0, 59, 86, 0.15);
+}
+
+.btnActive {
+    color: #154BA1;
+    font-weight: 700;
+    font-size: 16px; 
+    border-radius: 10px;
+    text-align: center;
+    padding: 7px 15px;
+    background: rgba(0, 59, 86, 0.15);
+}
+
+@media screen and (max-width: 991px) {
+    .banner {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        display: none;
+    }
+
+    .oppositePosts {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .oppositeCategoryTitle {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .oppositePosts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .postsSlice {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

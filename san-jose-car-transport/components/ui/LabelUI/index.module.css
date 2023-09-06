@@ -1,0 +1,10 @@
+
+.label {
+    color: #001D4A;
+    font-weight: 700;
+    font-size: 18px; 
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    white-space: nowrap;
+}

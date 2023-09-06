@@ -1,0 +1,63 @@
+.aboutTransportSection {
+    padding: 30px 0;
+}
+
+.aboutTransportLine {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.revers {
+    flex-direction: row-reverse;
+}
+
+.textesNode {
+    background: #F4F7FB;
+    border: 2px solid #BB2233;
+    border-radius: 10px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    max-width: 585px;
+}
+
+.text {
+    color: #003B56;
+}
+
+.imagesNode {
+    max-width: 595px;
+    width: 100%;
+    max-height: 330px;
+    background: #FDFDFF;
+    border: 2px solid #BB2233;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.image {
+    border-radius: 10px;
+    max-width: 595px;
+    max-height: 300px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 768px) {
+    .textesNode,
+    .imagesNode, 
+    .image {
+        max-width: initial;
+    }
+
+    .revers,
+    .aboutTransportLine {
+        flex-direction: column;
+    }
+}

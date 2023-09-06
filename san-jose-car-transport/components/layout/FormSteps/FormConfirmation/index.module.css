@@ -1,0 +1,169 @@
+.form {
+    max-width: 621px;
+    min-width: 530px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    margin: 30px auto 0 auto;
+    overflow-y: auto;
+    position: relative;
+}
+
+.form::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 3px solid transparent;
+    background: linear-gradient(180deg, #F83600 0%, #FE8C00 100%) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    border-radius: 10px;
+}
+
+.goBack {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.goBack span {
+    color: #001D4A;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.fromTitle {
+    color: #001D4A;
+    width: 260px;
+    border-bottom: 1px dashed #001D4A;
+
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+.fromTitle span {
+    background: linear-gradient(180deg, #F83600 0%, #FE8C00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.nestedNode {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.node {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.type {
+    background: linear-gradient(180deg, #F83600 0%, #FE8C00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.value {
+    color: #001D4A;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.btn {
+    width: 260px;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #F83600 0%, #FE8C00 100%);
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 12px 0;
+
+    position: relative;
+    z-index: 1;
+
+    cursor: pointer;
+}
+
+.btnAnimeBorder {
+    outline: 2px solid transparent;
+    animation: border-spin .5s linear infinite;
+}
+
+
+@keyframes border-spin {
+    0% {
+        transform: scale(1);
+        outline-color: #00297A;
+    }
+    50% {
+        outline-color: #BB2233;
+        transform: scale(1.1);
+    }
+    100% {
+        outline-color: #00297A;
+        transform: scale(1);
+    }
+}
+
+.backAnime svg {
+    outline: 2px solid transparent;
+    border-radius: 50%;
+    animation: border-spin .5s linear infinite;
+}
+
+@media screen and (max-width: 768px) {
+    .form {
+        padding: 10px;
+        padding-top: 35px;
+        background: #F5F5F5;
+        min-width: initial;
+        height: initial;
+    }
+
+    .goBack {
+        top: 15px;
+        left: 15px;
+    }
+    
+    .goBack span {
+        font-size: 16px;
+    }
+
+    .type {
+        font-size: 16px;
+    }
+
+    .value {
+        font-size: 20px;
+    }
+}

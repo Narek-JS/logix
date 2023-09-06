@@ -1,0 +1,240 @@
+.generalInsurances {
+    background: #F4F7FB;
+    padding: 50px 0;
+}
+
+.cardsNode {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.aboutUs {
+    background-color: #FFFFFF;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.amazonContracter {
+    background: #F4F7FB;
+    border-top: 3px solid #32ADDC;
+    border-bottom: 3px solid #32ADDC;
+    margin-bottom: 25px;
+}
+
+.amazonContent {
+    background: #F4F7FB;
+    padding: 28px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.amazonContracter img {
+    width: 100%;
+    max-width: 98px;
+    min-width: 60px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.amazonContracter a {
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 700;
+    padding: 3px;
+    width: fit-content;
+}
+
+.amazonContracter a i {
+    color: #001D4A;
+    background-color: #29AAE2;
+}
+
+.amazonContracter a span {
+    background-color: #29AAE2;
+}
+
+.attachmentNode {
+    background-image: url('../../public/assets/images/attachmentNode.png');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 70px;
+    border-bottom: 3px solid #32ADDC;
+}
+
+.benefits {
+    padding: 50px 0;
+}
+
+.benefitsWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.benefitsImage {
+    border-radius: 20px;
+    max-width: 600px;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+    flex: 1;
+}
+
+.benefitsContent {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.benefitsTitle {
+    background-color: #29AAE2;
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 700;
+    width: fit-content;
+    padding: 3px;
+}
+
+.benefitsList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.benefitsList li {
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+    gap: 20px;
+    position: relative;
+}
+
+.benefitsList li::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    transform: translateY(-50%);
+}
+
+.benefitsList li svg {
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.benefitsLink {
+    max-width: 430px;
+    border-radius: 20px;
+    background: #32ADDC;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #FFF;
+}
+
+.servicesSubTitle {
+    color: #001D4A;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.serviceTitle {
+    color: #29AAE2;
+    font-size: 40px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.articleSection {
+    padding: 50px 0;
+}
+
+.latesArticles {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.postGroups {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.postGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.posts {
+    display: flex;
+    gap: 20px;
+}
+
+.postGroupTitle {
+    font-size: 24px;
+    color: #001D4A;
+}
+
+.postGroupTitle span {
+    color: #32ADDC;
+}
+
+@media screen and (max-width: 1266px) {
+    .postGroupsReverse {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .benefitsImage {
+        max-width: 380px;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .articleSection {
+        display: none;
+    }
+    .benefitsImage {
+        max-width: 330px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .amazonContracter p {
+        font-size: 22px;
+        min-width: 220px;
+        text-align: center;
+    }
+
+    .amazonContent {
+        flex-direction: column;
+    }
+
+    .attachmentNode,
+    .benefits {
+        display: none;
+    }
+}

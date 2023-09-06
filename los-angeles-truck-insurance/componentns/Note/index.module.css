@@ -1,0 +1,56 @@
+.note {
+    border-radius: 20px;
+    border: 1px solid #FFC822;
+    background: #F5F5F5;
+
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.noteChildrens {
+    border-radius: 20px;
+    border: 1px solid rgba(21, 75, 161, 0.15);
+    background: #FFF;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.textNode {
+    max-width: 997px;
+    display: flex;
+    gap: 10px;
+}
+
+.textNode svg {
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.textNode p {
+    color: #154BA1;
+    line-height: 28px;
+    text-align: center;
+    padding-right: 15px;
+}
+
+.textNode p span,
+.textNode p a {
+    color: #FFC822;
+}
+
+.textNode p a {
+    text-decoration: underline;
+}
+
+.gap10 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

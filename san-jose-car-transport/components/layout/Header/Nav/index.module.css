@@ -1,0 +1,88 @@
+.nav {
+    background-color: transparent;
+    height: 60px;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    transition: all .5s;
+
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.4);
+}
+
+.informationBarBg {
+    border-bottom: initial;
+    background: #FFFFFF;
+}
+
+.informationBarBgBlue {
+    background-color: #FFFFFF;
+    border-bottom: none;
+}
+
+.contentDesktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dynamicLink {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.li {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all .2s;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #f8360000;
+}
+
+.activeLink,
+.li:hover {
+    border-bottom: 2px solid #FE8C00;
+}
+
+.contentMobile {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    gap: 14px;
+    cursor: pointer;
+}
+
+.informationBarBg .dynamicLink,
+.informationBarBg .li {
+    color: rgba(0, 29, 74, 0.8);
+}
+
+@media screen and (max-width: 768px) {
+    .contentMobile {
+        display: flex;
+        background: linear-gradient(180deg, #F83600 0%, #FE8C00 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+
+    .contentDesktop {
+        display: none;
+    }
+}

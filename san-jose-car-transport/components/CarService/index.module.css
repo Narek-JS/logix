@@ -1,0 +1,113 @@
+.carService {
+    position: relative;
+    max-width: 390px;
+}
+
+.bg {
+    max-width: 390px;
+    width: 100%;
+    max-height: 240px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: hsla(216, 100%, 15%, 0.5);
+    transition: all .2s
+}
+
+.image {
+    max-width: 390px;
+    width: 100%;
+    max-height: 240px;
+    height: 100%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    height: 100%;
+    padding: 0 15px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #001D4A;
+}
+
+.description {
+    font-weight: 500;
+    font-size: 14px;
+    color: #001D4A;
+    text-align: center;
+}
+
+.link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    padding: 5px 8px;
+    transition: all .2s;
+}
+
+.link::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    background: linear-gradient(180deg, #F83600 0%, #FE8C00 100%) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.link span {
+    background: linear-gradient(180deg, #F83600 0%, #FE8C00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+.carService:hover .bg {
+    opacity: 0;
+}
+
+.carService:hover .description {
+    text-decoration: underline;
+} 
+
+.carService:hover .link i {
+    animation: toRight .3s forwards;
+}
+
+.carService:hover .link span {
+    animation: toLeft .3s forwards;
+}
+
+@keyframes toRight {
+    0% {
+        transform: translateX(0);
+    } 100% {
+        transform: translateX(100px);
+    }
+}
+
+@keyframes toLeft {
+    0% {
+        transform: translateX(0);
+    } 100% {
+        transform: translateX(-50px);
+    }
+}

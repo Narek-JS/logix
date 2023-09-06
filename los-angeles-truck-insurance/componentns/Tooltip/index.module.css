@@ -1,0 +1,84 @@
+.tooltip-wrapper {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .tooltip-wrapper {
+      text-align: center;
+      max-width: 245px;
+    }
+}
+
+.tooltip-note {
+    width: 100%;
+    width: 300px;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    animation: appearTooltip .1s forwards;
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 920px) {
+    .tooltip-note {
+      right: 25px;
+      left: initial;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tooltip-note {
+      max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tooltip-note {
+      width: 250px;
+    }
+}
+
+.tooltip-tip {
+    background-color: #FFBF00 !important;
+    font-size: 14px;
+    color: #ffffff !important;
+    line-height: 18px;
+    border-radius: 5px;
+    padding: 5px 9px;
+}
+
+@media screen and (max-width: 768px) {
+    .tooltip-tip {
+      text-align: center;
+    }
+}
+
+.carrierTooltip div {
+    background-color: #FFBF00 !important;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff !important;
+    line-height: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .carrierTooltip div {
+      text-align: center;
+      max-width: 245px;
+    }
+}
+
+.tooltip-wrapper span {
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FFBF00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+  }
