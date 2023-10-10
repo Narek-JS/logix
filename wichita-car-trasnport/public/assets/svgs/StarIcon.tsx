@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-
-
 export const StarIcon: React.FC<{ precent?: number}> = ({ precent = 100 }) => {
     
     const [ precentState, setPrecentState ] = useState<Record<'precent', number>>({ precent });
