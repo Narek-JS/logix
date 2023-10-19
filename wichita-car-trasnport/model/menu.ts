@@ -28,6 +28,8 @@ export interface IMenuData {
     items: Array<MenuItem>;
     allItems: Array<MenuItem>;
     topHeaderCenterItems: Array<MenuItem>;
+    footerItems: Array<MenuItem>;
+    footerUnderItems: Array<MenuItem>;
     topHeaderLeftItem: MenuItem | null;
     topHeaderRightItem: MenuItem | null;
     contactInfo: Record<string, IContactInfo>; 
@@ -39,8 +41,11 @@ export class MenuAdapter {
     static createMenuData(data: any): IMenuData {
         const allItems = getMenuItemsWithChildeFormat(data?.items || []);
         const topHeaderItems = allItems.find(item => item.title === 'Top Header')?.children || [];
-        const items = allItems.filter((item) => item.title !== 'Top Header') || [];
+        const items = allItems.filter((item) => item.title !== 'Top Header' && item.title !== 'footer') || [];
         const topHeaderCenterItems = topHeaderItems.find(item => item.title === 'Center')?.children || [];
+        const footerItems = allItems.find(item => item.title === 'footer')?.children || [];
+        const footerUnderItems = footerItems.find(item => item.title === 'Footer Under Bar')?.children || []; 
+
         const contactInfo = data.items.reduce((acc, item) => {
             acc[item.title] = {
                 title: item.title,
@@ -49,6 +54,7 @@ export class MenuAdapter {
             };
             return acc;
         }, {});
+
         return {
             logo: data?.logo || '/assets/images/logo.png',
             social: (data?.social?.items || []).map((socialItem, index): SocialGroup => ({
@@ -58,9 +64,11 @@ export class MenuAdapter {
             })),
             items,
             contactInfo,
+            footerItems: footerItems.filter(item => item?.title !== 'Footer Under Bar'),
+            footerUnderItems,
             allItems: items.concat(topHeaderCenterItems),
             topHeaderCenterItems,
-            topHeaderLeftItem: topHeaderItems.find(item => item.title === 'left')?.children?.[0] || null, 
+            topHeaderLeftItem: topHeaderItems.find(item => item.title === 'Left')?.children?.[0] || null, 
             topHeaderRightItem: topHeaderItems.find(item => item.title === 'Right')?.children?.[0] || null
         };
     }

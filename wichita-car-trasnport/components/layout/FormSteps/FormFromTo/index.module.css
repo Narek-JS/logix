@@ -15,13 +15,14 @@
 
 .fromTitle {
     color: #005379;
-    width: 260px;
-    border-bottom: 1px dashed #005379;
+    width: 345px;
+    border-bottom: 1px solid #005379;
     font-weight: 700;
     font-size: 30px;
     text-align: center;
     padding-bottom: 5px;
     margin-bottom: 45px;
+    transition: all .2s;
 }
 
 .fromTitle span {
@@ -106,5 +107,12 @@
         padding: 10px;
         background: #F5F5F5;
         min-width: initial;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .fromTitle {
+        width: 290px;
+        font-size: 25px;
     }
 }
